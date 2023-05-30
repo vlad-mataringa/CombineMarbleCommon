@@ -8,12 +8,17 @@
 import Foundation
 
 public enum PublisherType: String, Codable {
-    case raw
+    case atom
     case handleEvents
     case map
     case filter
     case combineLatest
     case merge
+    case zip
+    case delay
+    case debounce
+    case throttle
+    case removeDuplicates
 }
 
 public struct ValueLog: Codable {
